@@ -1,0 +1,17 @@
+﻿@using BOL;
+<table>
+    <tr>
+        <td>Latest_Machine_Type</td>
+    </tr>
+
+    @{
+        @foreach (String p in ViewBag.list)
+        {
+            <tr>
+                <td>@p</td>
+            </tr>
+
+        }
+    }
+</table>
+<h3><a href="/Home/Index">Go to List</a></h3>

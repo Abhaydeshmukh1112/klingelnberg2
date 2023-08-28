@@ -1,0 +1,20 @@
+﻿@using BOL;
+<table>
+    <tr>
+        <td>Asset_Name</td>
+        <td>Machine_Type</td>
+        <td>Series_Number</td>
+    </tr>
+
+    @{
+        @foreach (KlingelnBerg p in ViewBag.list)
+        {
+            <tr>
+                <td>@p.assetName</td>
+                <td>@p.machineType</td>
+                <td>@p.seriesNumber</td>
+                <td><a href="/Home/Delete/@p.seriesNumber">Delete</a></td>
+            </tr>
+        }
+    }
+    </table>
